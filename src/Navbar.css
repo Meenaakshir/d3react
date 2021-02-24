@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+main {
+  margin: 16px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+
+  background: blue;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 300;
+  height: 40px;
+  margin-left: 2rem;
+}
+
+.navbar__title {
+  margin-right: auto;
+  margin-left: 1rem;
+  font-size: 150%;
+  padding: 12px 16px;
+  margin-left: 5rem;
+}
+
+.navbar__item {
+  padding: 16px 16px;
+  cursor: pointer;
+  vertical-align: middle;
+}

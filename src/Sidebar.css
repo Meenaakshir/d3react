@@ -1,0 +1,58 @@
+.side-menu {
+  /* background-color: rgb(5, 5, 71); */
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* margin-top: 5rem; */
+}
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-menu {
+  background-color: rgb(3, 3, 56);
+  width: 5rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+  width: 3%;
+}
+
+.nav-menu-items {
+  width: 100%;
+
+  margin-left: -90%;
+  background-color: rgb(3, 3, 56);
+}
+
+.navbar-toggle {
+  background-color: rgb(3, 3, 56);
+  width: 75%;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+span {
+  margin-left: 16px;
+}
+p {
+  margin-left: 35rem;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 2%;
+}
