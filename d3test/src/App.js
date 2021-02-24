@@ -14,7 +14,7 @@ const gaugeData = Data["gaugeData"];
 export default function App() {
   const itemObj = {};
   const [areaDataName, setAreaDataName] = useState("Quality Score");
-  const [areaData, setAreaData] = useState(Data["areaData"]);
+  const [areaData] = useState(Data["areaData"]);
   //calculating data for donut items//
 
   function handleClick(name) {

@@ -2,7 +2,7 @@
   /* background-color: rgb(5, 5, 71); */
   height: 80px;
   display: flex;
-  justify-content: start;
+  /* justify-content: start; */
   align-items: center;
   /* margin-top: 5rem; */
 }
@@ -43,7 +43,7 @@
   width: 75%;
   height: 100px;
   display: flex;
-  justify-content: start;
+  /* justify-content: start; */
   align-items: center;
 }
 

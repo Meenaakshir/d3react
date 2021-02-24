@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useD3 } from "./hooks/useD3";
 import Button from "react-bootstrap/Button";
 import * as d3 from "d3";
@@ -20,7 +20,7 @@ function AreaGraph({ data, option }) {
 
       // format the data
       data[option].forEach(function (d) {
-        if (d.vsly == 0) {
+        if (d.vsly === 0) {
           d.date = parseTime(d.date);
           d.vsly = 1;
         }

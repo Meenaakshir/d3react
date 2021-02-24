@@ -1,15 +1,11 @@
 import React, { useState } from "react";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
 
 import { Sidebardata } from "./Sidebardata";
 import "./Sidebar.css";
 import { IconContext } from "react-icons";
 
 function Sidebar() {
-  const [sidebar, setSidebar] = useState(true);
-
-  const showSidebar = () => setSidebar(sidebar);
+  const [sidebar] = useState(true);
 
   return (
     <>

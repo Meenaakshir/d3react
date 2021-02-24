@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Navbar.css";
 import { FaAlignJustify } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";

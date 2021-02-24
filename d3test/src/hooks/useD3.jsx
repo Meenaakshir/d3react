@@ -8,8 +8,10 @@ export const useD3 = (renderChartFn, dependencies) => {
     renderChartFn(d3.select(ref.current));
     return () => {
       d3.select(ref.current).selectAll("path").remove();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       d3.select(ref.current).selectAll("g").remove();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, dependencies);
   return ref;
 };

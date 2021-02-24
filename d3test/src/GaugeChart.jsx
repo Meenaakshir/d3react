@@ -1,15 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import * as d3 from "d3";
 import "./AreaGraph";
 import { useD3 } from "./hooks/useD3";
 
 function GaugeChart({ data, option, onClick }) {
-  const [donutData, setDonutData] = useState(data);
-
-  useEffect(() => {
-    setDonutData(data);
-  }, [data]);
-
   //useD3 hook that gets the reference to the dom for manipulation//
   const ref = useD3(
     //svg specification for the guage chart //
@@ -33,10 +27,10 @@ function GaugeChart({ data, option, onClick }) {
       //outer and inner radius specifications for guage chart//
       const path = d3.arc().outerRadius(radius).innerRadius(70);
 
-      const label = d3
-        .arc()
-        .outerRadius(radius)
-        .innerRadius(radius - 32);
+      // const label = d3
+      //   .arc()
+      //   .outerRadius(radius)
+      //   .innerRadius(radius - 32);
 
       const pies = g
         .selectAll(".arc")
